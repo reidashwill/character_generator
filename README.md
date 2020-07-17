@@ -1,24 +1,46 @@
-# README
+# Character Creator
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+#### By Reid Ashwill 
 
-* Ruby version
+## Description
+This app is my capstone for Epicodus' full stack web development program.
 
-* System dependencies
+## Specs
 
-* Configuration
 
-* Database creation
+<!-- ![Diagram of app components](filename goes here) -->
 
-* Database initialization
 
-* How to run the test suite
+## User Stories
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
 
-* ...
+## Setup/Installation Requirements
+* _Navigate to https://github.com/reidashwill/week_17_project_
+* _clone the respository to your local machine_
+* _navigate to the cloned directory and open in your text editor of choice to view code_
+
+* _from the terminal inside the cloned project directory, run the command: npm install._
+* _run the command: npm run start to start a live server on your local machine_
+* _In your browser of choice, navigate to localhost:3000_
+
+* _see it desployed live at https://tap-house.herokuapp.com/_
+## Known Bugs
+No known bugs at this time
+
+
+## Technologies Used
+
+* __
+* __
+* __
+* __
+* __
+
+
+### License
+
+*Licensed under the MIT license*
+
+Copyright (c) 2020 **_Reid Ashwill_**
