@@ -1,6 +1,5 @@
 <% if @characters.any? %>
 <ul>
-<%= @charClass %>
 <% @characters.each do |character| %>
 <li><%= link_to character.name, character_path(character) %> </li>
 <% end %>
@@ -8,4 +7,5 @@
 <% else %>
 <p>There are no characters yet!</p>
 <% end %>
+<li><%= link_to "New Character", new_character_path %> </li>
 <%# <p> <%= link_to "Create new survey", new_survey_path %></p> 

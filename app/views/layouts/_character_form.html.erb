@@ -7,8 +7,7 @@
 
 
 
-    <%= f.hidden_field :charClass, :value =>  @publishing = HTTParty.get('https://warm-harbor-14009.herokuapp.com/businesses/publishing')   %>
-    <%= f.hidden_field :background, :value => Faker::Name.name   %>
+    <%= f.hidden_field :charClass, :value => choose_class()  %>
 
     <%= f.submit %>
 <% end %>

@@ -2,7 +2,6 @@
 class CharactersController < ApplicationController
   def index
     @characters = Character.all
-    @charClass = HTTParty.get('https://api.open5e.com/classes')
     render :index
   end
 
