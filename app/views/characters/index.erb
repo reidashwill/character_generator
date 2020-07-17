@@ -1,0 +1,10 @@
+<% if @characters.any? %>
+<ul>
+<% @characters.each do |character| %>
+<li><%= character.name %> </li>
+<% end %>
+</ul>
+<% else %>
+<p>There are no characters yet!</p>
+<% end %>
+<%# <p> <%= link_to "Create new survey", new_survey_path %></p> 
