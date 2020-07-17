@@ -30,7 +30,7 @@ class CharactersController < ApplicationController
   end
 
   def update
-    @character = Charated.find(params[:id])
+    @character = Character.find(params[:id])
     if @character.update(character_params)
       redirect_to characters_path
     else
@@ -41,7 +41,7 @@ class CharactersController < ApplicationController
   def destroy
     @character = Character.find(params[:id])
     @character.destroy
-    redirect_to character_path
+    redirect_to characters_path
   end
 
   private
