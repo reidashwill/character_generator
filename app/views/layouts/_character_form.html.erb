@@ -7,7 +7,10 @@
 
 
 
-    <%= f.hidden_field :charClass, :value => choose_class()  %>
+    <%= f.hidden_field :charClass, :value => Faker::Games::DnD.klass  %>
+    <%= f.hidden_field :background, :value => Faker::Games::DnD.background  %>
+    <%= f.hidden_field :alignment, :value => Faker::Games::DnD.alignment  %>
+    
 
     <%= f.submit %>
 <% end %>

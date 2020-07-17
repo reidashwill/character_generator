@@ -1,30 +1,22 @@
 module CharacterHelper
-  def choose_class()
-    classNum = rand(1..12)
-    if classNum == 1
-      'Barbarian'
-    elsif classNum == 2
-      'Bard'
-    elsif classNum == 3
-      'Druid'
-    elsif classNum == 4
-      'Fighter'
-    elsif classNum == 5
-      'Monk'
-    elsif classNum == 6
-      'Paladin'
-    elsif classNum == 7
-      'Ranger'
-    elsif classNum == 8
-      'Rogue'
-    elsif classNum == 9
-      'Sorcerer'
-    elsif classNum == 10
-      'Warlock'
-    elsif classNum == 11
-      'Wizard'
-    elsif classNum == 12
-      'Cleric'
+  def choose_race()
+    raceNum = rand(1..8)
+    if raceNum == 1
+      'Tiefling'
+    elsif raceNum == 2
+      'Dragonborn'
+    elsif raceNum == 3
+      'Dwarf'
+    elsif raceNum == 4
+      'Gnome'
+    elsif raceNum == 5
+      'Half-Elf'
+    elsif raceNum == 6
+      'Half-Orc'
+    elsif raceNum == 7
+      'Halfling'
+    elsif raceNum == 8
+      'Human'
     end
   end
 end    
