@@ -5,7 +5,10 @@
     <%= f.text_field :name %>
   </div>
 
-    <%= f.hidden_field :charClass, :value => 'test' %>
+
+
+    <%= f.hidden_field :charClass, :value =>  @publishing = HTTParty.get('https://warm-harbor-14009.herokuapp.com/businesses/publishing')   %>
+    <%= f.hidden_field :background, :value => Faker::Name.name   %>
 
     <%= f.submit %>
 <% end %>

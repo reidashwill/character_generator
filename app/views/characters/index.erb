@@ -1,5 +1,6 @@
 <% if @characters.any? %>
 <ul>
+<%= @charClass %>
 <% @characters.each do |character| %>
 <li><%= link_to character.name, character_path(character) %> </li>
 <% end %>
