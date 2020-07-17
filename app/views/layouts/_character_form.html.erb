@@ -12,6 +12,11 @@
     <%= f.hidden_field :alignment, :value => Faker::Games::DnD.alignment  %>
     <%= f.hidden_field :race, :value => choose_race()  %>
     <%= f.hidden_field :str, :value => stat_roller()  %>
+    <%= f.hidden_field :dex, :value => stat_roller()  %>
+    <%= f.hidden_field :con, :value => stat_roller()  %>
+    <%= f.hidden_field :int, :value => stat_roller()  %>
+    <%= f.hidden_field :wis, :value => stat_roller()  %>
+    <%= f.hidden_field :cha, :value => stat_roller()  %>
 
     <%= f.submit %>
 <% end %>

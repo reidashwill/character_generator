@@ -20,13 +20,13 @@ module CharacterHelper
     end
   end
 
-  stat_roller()
+  def stat_roller()
   roll1 = rand(1..6)
   roll2 = rand(1..6)
   roll3 = rand(1..6)
   roll4 = rand(1..6)
   rolls = [roll1, roll2, roll3, roll4]
-  kept_rolls = rolls.sort.drop
+  kept_rolls = rolls.sort.drop(1)
   kept_rolls.inject(0){|sum,x| sum + x } 
   end
 end    

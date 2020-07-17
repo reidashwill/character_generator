@@ -4,6 +4,12 @@
 <h1><%= @character.alignment %></h1>
 <h1><%= @character.race %></h1>
 
+<h3><%= @character.str %></h3>
+<h3><%= @character.dex %></h3>
+<h3><%= @character.con %></h3>
+<h3><%= @character.int %></h3>
+<h3><%= @character.wis %></h3>
+<h3><%= @character.cha %></h3>
 
 <p><%= link_to "Edit", edit_character_path(@character) %> </p>
 <p><%= link_to "Delete", character_path(@character), :data => {:confirm => "You sure?", :method => "delete"} %></p>
