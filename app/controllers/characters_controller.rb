@@ -16,6 +16,7 @@ class CharactersController < ApplicationController
       redirect_to characters_path
     else
       render :new
+    end
   end
 
   def edit
@@ -47,5 +48,6 @@ class CharactersController < ApplicationController
     def character_params
       params.require(:character).permit(:name)
     end
+  
 
 end
