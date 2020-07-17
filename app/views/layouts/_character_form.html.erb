@@ -10,7 +10,8 @@
     <%= f.hidden_field :charClass, :value => Faker::Games::DnD.klass  %>
     <%= f.hidden_field :background, :value => Faker::Games::DnD.background  %>
     <%= f.hidden_field :alignment, :value => Faker::Games::DnD.alignment  %>
-    
+    <%= f.hidden_field :race, :value => choose_race()  %>
+    <%= f.hidden_field :str, :value => stat_roller()  %>
 
     <%= f.submit %>
 <% end %>
